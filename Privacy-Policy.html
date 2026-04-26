@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Privacy Policy · Nail Spa Salon Game</title>
+  <!-- Google Fonts: Poppins + Quicksand for a soft, stylish feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #ffdde1 0%, #f9c9d4 30%, #ffe6f0 100%);
+      /* gentle pink & peach tones — nail salon vibes */
+      font-family: 'Inter', 'Quicksand', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
+      color: #3d2b1f;
+      padding: 2rem 1.5rem;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* floating subtle nail polish dots */
+    body::before {
+      content: "💅✨💖💅💄✨💖";
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 32px;
+      opacity: 0.1;
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 0;
+      letter-spacing: 18px;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ----- HERO / ICON SECTION (glam, centered) ----- */
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2.8rem 1.5rem;
+      background: rgba(255, 248, 250, 0.7);
+      backdrop-filter: blur(16px);
+      border-radius: 64px;
+      box-shadow: 0 25px 40px -14px rgba(0,0,0,0.15), inset 0 1px 2px rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,225,235,0.8);
+    }
+    .app-icon {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #ff99c2, #ff6f9e);
+      border-radius: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 20px 30px -10px rgba(233, 90, 140, 0.4);
+      transition: transform 0.25s ease;
+    }
+    .app-icon img {
+      width: 96px;
+      height: 96px;
+      filter: drop-shadow(2px 4px 10px rgba(0,0,0,0.2));
+      border-radius: 20px;
+    }
+    .app-icon:hover {
+      transform: scale(1.02);
+    }
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(120deg, #d43f72, #f098b6, #ffc0d0);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+      margin-top: 4px;
+    }
+    .game-badge {
+      display: inline-block;
+      background: rgba(243, 176, 190, 0.5);
+      backdrop-filter: blur(8px);
+      padding: 5px 20px;
+      border-radius: 60px;
+      font-weight: 600;
+      color: #a13859;
+      font-size: 0.85rem;
+      margin-top: 14px;
+      border: 1px solid #ffe0ec;
+    }
+    .dev-info {
+      margin-top: 18px;
+      font-weight: 500;
+      color: #b14b6e;
+    }
+    .dev-info a {
+      color: #bc4e75;
+      text-decoration: none;
+      border-bottom: 2px dotted #ffb7cd;
+    }
+    .effective-badge {
+      background: #fff0f4;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.4rem 1.4rem;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #bd5780;
+      margin-top: 18px;
+      box-shadow: inset 0 1px 3px #fff9fc, 0 3px 8px rgba(0,0,0,0.02);
+    }
+
+    /* ----- MAIN 2-COLUMN LAYOUT ----- */
+    .policy-wrapper {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .policy-content {
+      flex: 3;
+      min-width: 240px;
+    }
+    .toc-column {
+      flex: 1;
+      min-width: 230px;
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+
+    /* glossy card style */
+    .gloss-card {
+      background: rgba(255, 248, 250, 0.82);
+      backdrop-filter: blur(12px);
+      border-radius: 40px;
+      padding: 1.6rem 2rem;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(255, 218, 230, 0.9);
+      box-shadow: 0 15px 35px -12px rgba(0,0,0,0.08);
+      transition: all 0.25s;
+    }
+    .gloss-card:hover {
+      background: rgba(255, 245, 250, 0.92);
+      border-color: #ffbfd4;
+      transform: translateY(-2px);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 1.2rem;
+    }
+    .card-header i {
+      font-size: 2rem;
+      background: linear-gradient(145deg, #f47ba2, #cd4770);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #cf4975, #ac3b5f);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin: 0;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #bb4b71;
+      margin: 0.8rem 0 0.5rem;
+      display: inline-block;
+      border-left: 5px solid #ff99bb;
+      padding-left: 14px;
+    }
+    p, li {
+      color: #4b2e2a;
+      line-height: 1.55;
+      font-weight: 500;
+    }
+    ul, ol {
+      margin: 0.7rem 0 0.9rem 1.5rem;
+    }
+    li {
+      margin: 0.45rem 0;
+    }
+    .highlight-glam {
+      background: linear-gradient(105deg, #fff2f5, #ffe9f0);
+      border-radius: 28px;
+      padding: 1rem 1.6rem;
+      margin: 1.2rem 0;
+      border-left: 7px solid #ff8aae;
+    }
+    .feature-sticker {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffcfdf80;
+      border-radius: 50px;
+      padding: 0.25rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #a53e60;
+    }
+
+    /* TOC stylish salon */
+    .toc-glam {
+      background: rgba(255, 240, 245, 0.88);
+      backdrop-filter: blur(12px);
+      border-radius: 36px;
+      padding: 1.6rem 1.2rem;
+      border: 1px solid #ffcbdf;
+      box-shadow: 0 15px 30px -12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 30px;
+    }
+    .toc-glam h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #cc5579;
+      border-bottom: 2px dashed #ffb2ca;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .toc-list {
+      list-style: none;
+      padding: 0;
+    }
+    .toc-list li {
+      margin: 0.85rem 0;
+    }
+    .toc-list a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #8f425f;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+    .toc-list a i {
+      font-size: 0.8rem;
+      color: #ea729a;
+    }
+    .toc-list a:hover {
+      color: #c94571;
+      transform: translateX(5px);
+    }
+
+    .btn-spa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(95deg, #ff82a8, #e4547e);
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 6px 15px #d4638b70;
+      transition: 0.2s;
+    }
+    .btn-spa:hover {
+      transform: scale(0.96);
+      background: linear-gradient(95deg, #e46a92, #cc4870);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background: rgba(255, 235, 240, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 48px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #713a51;
+    }
+
+    @media (max-width: 860px) {
+      .policy-wrapper { flex-direction: column; }
+      .toc-column { position: static; width: 100%; }
+      .hero h1 { font-size: 2rem; }
+      .app-icon { width: 100px; height: 100px; }
+      .app-icon img { width: 72px; height: 72px; }
+      .gloss-card { padding: 1.2rem; }
+    }
+
+    .tiny-sparkle {
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Hero section with large icon and glamorous style -->
+  <div class="hero">
+    <div class="app-icon">
+      <img src="https://github.com/nadeemgamingstudio/NailSpaSalonGame/blob/main/icon512.png?raw=true" alt="Nail Spa Salon Game Icon" onerror="this.src='https://placehold.co/130x130?text=💅'">
+    </div>
+    <h1>💅 Nail Spa Salon Game ✨</h1>
+    <div class="game-badge">
+      <i class="fas fa-spa"></i> creative nail art • design & relax • manicure fun
+    </div>
+    <div class="dev-info">
+      <i class="fas fa-heart"></i> Developed by <strong>Nadeem Gaming Studio</strong> &nbsp;|&nbsp; 📧 <a href="mailto:nadeemgamer180@gmail.com">nadeemgamer180@gmail.com</a>
+    </div>
+    <div class="effective-badge">
+      <i class="far fa-calendar-check"></i> Privacy policy effective: <span id="effectiveDate"></span>
+    </div>
+  </div>
+
+  <div class="policy-wrapper">
+    <!-- MAIN CONTENT SECTION (privacy details) -->
+    <div class="policy-content">
+      
+      <!-- intro overview -->
+      <div class="gloss-card" id="overview">
+        <div class="card-header">
+          <i class="fas fa-hand-sparkles"></i>
+          <h2>🌸 Privacy overview</h2>
+        </div>
+        <p><strong>Nail Spa Salon Game</strong> is a delightful, creative manicure and nail art simulation where you design, paint, and style stunning nails. We respect your privacy and believe in complete transparency. This policy describes what information we collect, how we use it, and the choices you have — because your trust is the foundation of our salon.</p>
+        <div class="highlight-glam">
+          <i class="fas fa-gem" style="color:#d44b77"></i> <strong>Our promise:</strong> No selling of personal data, full compliance with child protection laws (COPPA/GDPR-K), and a safe creative space for all ages.
+        </div>
+      </div>
+
+      <!-- 1. Data collection -->
+      <div class="gloss-card" id="datacollect">
+        <div class="card-header">
+          <i class="fas fa-database"></i>
+          <h2>💅 1. What data we collect</h2>
+        </div>
+        <p>We collect minimal information to keep your salon experience smooth, show relevant ads, and improve the game:</p>
+        <ul>
+          <li><strong>📱 Device & technical info</strong> — model, OS version, language, country, anonymous advertising ID (AAID / IDFA), IP address. Used for analytics and ad functionality.</li>
+          <li><strong>🎮 Game progress & preferences</strong> — unlocked nail art items, level/score, saved designs, sound settings. Stored locally and optionally via cloud if you sign in.</li>
+          <li><strong>📢 Ad interaction data</strong> — via Google AdMob. The platform may use identifiers to serve contextual or personalized ads (respecting child settings).</li>
+          <li><strong>💎 In-app purchases</strong> — if you buy premium polish packs or remove ads, Google Play Billing handles the transaction. We never see your payment details.</li>
+        </ul>
+        <p><i class="fas fa-shield-heart"></i> We never request real names, location (beyond IP-derived region), contacts, or files from your device.</p>
+      </div>
+
+      <!-- 2. How we use data -->
+      <div class="gloss-card" id="howuse">
+        <div class="card-header">
+          <i class="fas fa-magic"></i>
+          <h2>💅 2. How we use your information</h2>
+        </div>
+        <p>Your data helps us deliver a polished experience:</p>
+        <ul>
+          <li><i class="fas fa-paintbrush-pencil"></i> <strong>Save game progress:</strong> keep your nail collections, stars, and unlockables.</li>
+          <li><i class="fas fa-chart-simple"></i> <strong>Analytics & crash reports</strong> — using Firebase Crashlytics to fix bugs and improve performance across different devices.</li>
+          <li><i class="fas fa-ad"></i> <strong>Display ads</strong> (optional rewarded videos for extra nail designs) via Google AdMob.</li>
+          <li><i class="fas fa-cart-shopping"></i> <strong>Purchase verification</strong> — grant virtual items after successful Google Play transactions.</li>
+        </ul>
+        <div class="highlight-glam">
+          <i class="fas fa-ban"></i> We do not share your personal data with third parties for their own marketing purposes.
+        </div>
+      </div>
+
+      <!-- 3. Third-party services -->
+      <div class="gloss-card" id="thirdparty">
+        <div class="card-header">
+          <i class="fas fa-handshake"></i>
+          <h2>💅 3. Third‑party integrations</h2>
+        </div>
+        <p>To provide core features, we rely on trusted partners:</p>
+        <ul>
+          <li><strong>Google AdMob</strong> – serves ads (banner, interstitial, rewarded). AdMob may collect device data and IP for ad relevance. <a href="https://policies.google.com/privacy" style="color:#c95a80;" target="_blank">Google Privacy Policy</a>.</li>
+          <li><strong>Firebase Analytics & Crashlytics</strong> – tracks anonymized usage and crash data. Helps us make Nail Spa Salon Game more stable and enjoyable.</li>
+          <li><strong>Google Play Billing</strong> – processing all in-app purchases. We never handle payment credentials.</li>
+        </ul>
+        <p>Each provider complies with GDPR, CCPA, and COPPA where applicable.</p>
+      </div>
+
+      <!-- 4. Retention & deletion -->
+      <div class="gloss-card" id="dataretention">
+        <div class="card-header">
+          <i class="fas fa-trash-alt"></i>
+          <h2>💅 4. Data retention & deletion</h2>
+        </div>
+        <p>Your nail designs and level progress are stored locally on your device. If you uninstall the game, local progress may be removed. No account is mandatory. For any data deletion request related to analytics identifiers, contact us at <a href="mailto:nadeemgamer180@gmail.com" style="color:#e46425;">nadeemgamer180@gmail.com</a>. We'll respond within 30 days.</p>
+        <p>Advertising identifiers can be reset via your device settings (Android: Google → Ads → Reset advertising ID).</p>
+      </div>
+
+      <!-- 5. Advertising choices -->
+      <div class="gloss-card" id="adchoices">
+        <div class="card-header">
+          <i class="fas fa-ad"></i>
+          <h2>💅 5. Your ad choices & opt-out</h2>
+        </div>
+        <p>We give you control over personalized advertising:</p>
+        <ul>
+          <li>On Android, go to <strong>Settings → Google → Ads → Opt out of Ads Personalization</strong>.</li>
+          <li>For users under the age of consent (varies by region), only non-personalized contextual ads are shown (COPPA mode).</li>
+          <li>Rewarded video ads are always voluntary; you choose to watch them for in-game bonuses.</li>
+        </ul>
+        <div class="feature-sticker"><i class="fas fa-child"></i> Child-safe design enabled</div>
+      </div>
+
+      <!-- 6. Children's privacy (COPPA/GDPR-K) -->
+      <div class="gloss-card" id="children">
+        <div class="card-header">
+          <i class="fas fa-child"></i>
+          <h2>💅 6. Children’s privacy (COPPA / GDPR‑K)</h2>
+        </div>
+        <p><strong>Nail Spa Salon Game</strong> is family-friendly and does not knowingly collect personal information from children under 13 (or 16 in the EEA).</p>
+        <ul>
+          <li>We do not require any personal data (name/email) to play the game.</li>
+          <li>If the Play Store identifies a child account, personalized ads and certain analytics are disabled automatically.</li>
+          <li>Parents/guardians: if you believe your child has unintentionally provided any personal info (e.g., through customer support email), contact us immediately and we will delete it.</li>
+        </ul>
+      </div>
+
+      <!-- 7. Security measures -->
+      <div class="gloss-card" id="security">
+        <div class="card-header">
+          <i class="fas fa-lock"></i>
+          <h2>💅 7. Data security</h2>
+        </div>
+        <p>We adopt industry standards: encrypted network connections (TLS), minimal data collection, and restricted access to internal systems. Although no system is 100% invulnerable, we continuously update our security practices to protect your personal information.</p>
+      </div>
+
+      <!-- 8. Your privacy rights -->
+      <div class="gloss-card" id="rights">
+        <div class="card-header">
+          <i class="fas fa-user-check"></i>
+          <h2>💅 8. Your privacy rights</h2>
+        </div>
+        <p>Depending on your region (EEA, UK, California, Brazil, India), you may have the right to:</p>
+        <ul>
+          <li>Request access to your data (if any linked to advertising ID).</li>
+          <li>Request rectification or deletion of data.</li>
+          <li>Opt out of “sale” (we never sell).</li>
+          <li>Withdraw consent for analytics by resetting your advertising ID.</li>
+        </ul>
+        <p>To exercise any right, email <strong>nadeemgamer180@gmail.com</strong> with subject “Privacy Request – Nail Spa Salon Game”. We will respond within a reasonable timeframe.</p>
+      </div>
+
+      <!-- 9. Changes to policy -->
+      <div class="gloss-card" id="updates">
+        <div class="card-header">
+          <i class="fas fa-sync-alt"></i>
+          <h2>💅 9. Changes to this policy</h2>
+        </div>
+        <p>We may update this Privacy Policy occasionally. If changes are significant, we will notify you via an in‑game notice or by updating the effective date at the top of this page. Your continued use of the game after the update constitutes acceptance of the revised policy.</p>
+      </div>
+
+      <!-- 10. Contact & support -->
+      <div class="gloss-card" id="contact">
+        <div class="card-header">
+          <i class="fas fa-envelope-open-text"></i>
+          <h2>💅 10. Contact us</h2>
+        </div>
+        <p>Have questions, feedback, or privacy concerns? We’re here to help you shine!</p>
+        <div style="background: #ffecf0b3; border-radius: 28px; padding: 1rem 1.5rem;">
+          <p><i class="fas fa-star"></i> <strong>Nadeem Gaming Studio</strong><br>
+          📧 <a href="mailto:nadeemgamer180@gmail.com" style="font-weight: 700; color: #d04979;">nadeemgamer180@gmail.com</a><br>
+          💖 <strong>Nail Spa Salon Game</strong> – create, style, relax.</p>
+          <a href="mailto:nadeemgamer180@gmail.com?subject=Privacy%20Inquiry%20Nail%20Spa%20Salon" class="btn-spa"><i class="fas fa-envelope"></i> Send privacy message</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOC STICKY ASIDE (elegant salon menu) -->
+    <aside class="toc-column">
+      <div class="toc-glam">
+        <h4><i class="fas fa-spa"></i> Spa Menu</h4>
+        <ul class="toc-list">
+          <li><a href="#overview"><i class="fas fa-circle-info"></i> Overview</a></li>
+          <li><a href="#datacollect"><i class="fas fa-database"></i> Data collected</a></li>
+          <li><a href="#howuse"><i class="fas fa-magic"></i> Use of data</a></li>
+          <li><a href="#thirdparty"><i class="fas fa-handshake"></i> Third parties</a></li>
+          <li><a href="#dataretention"><i class="fas fa-trash-alt"></i> Retention & deletion</a></li>
+          <li><a href="#adchoices"><i class="fas fa-ad"></i> Ad choices</a></li>
+          <li><a href="#children"><i class="fas fa-child"></i> Children's privacy</a></li>
+          <li><a href="#security"><i class="fas fa-lock"></i> Security</a></li>
+          <li><a href="#rights"><i class="fas fa-user-check"></i> Your rights</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact us</a></li>
+        </ul>
+        <hr style="margin: 1.5rem 0; border-color: #ffbed6;">
+        <div class="tiny-sparkle" style="text-align: center">
+          <i class="fas fa-gem"></i> polish & pamper <i class="fas fa-heart"></i>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Nadeem Gaming Studio — Nail Spa Salon Game. All creative rights reserved. <br>
+    <i class="fas fa-hand-peace"></i> Privacy first, glamour always. <a href="mailto:nadeemgamer180@gmail.com" style="color:#be5c7d;">Contact support</a></p>
+  </footer>
+</div>
+
+<script>
+  // set effective date and copyright year
+  const today = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('effectiveDate').textContent = today.toLocaleDateString(undefined, options);
+  document.getElementById('year').textContent = today.getFullYear();
+
+  // smooth scroll for anchor tags inside toc and buttons
+  document.querySelectorAll('.toc-list a, .btn-spa').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
